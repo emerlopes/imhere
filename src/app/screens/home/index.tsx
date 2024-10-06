@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import { styles } from '@/app/screens/home/styles';
 import Input from '@/components/input';
 import Button from '@/components/button';
+import Participant from '@/components/participant';
 
 export default function Home() {
 
@@ -19,6 +20,9 @@ export default function Home() {
                 <Input />
                 <Button title="+" onPress={handleParticipantAdd} />
             </View>
+
+            <Participant name="Emerson Lopes"/>
+            <Participant name="Emerson Lopes"/>
 
         </View>
     );
