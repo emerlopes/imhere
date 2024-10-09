@@ -5,14 +5,15 @@ import { colors } from "@/styles/colors";
 import Button from "../button";
 
 type Props = {
-    name: string
+    name: string,
+    onRemove: () => void
 }
 
-export default function Participant({ name }: Props) {
+export default function Participant({ name, onRemove }: Props) {
     return (
         <View style={styles.container}>
             <Text style={styles.name}>{name}</Text>
-            <Button title="-" variant="secondary" />
+            <Button title="-" variant="secondary" onPress={onRemove} />
         </View>
     );
 }
