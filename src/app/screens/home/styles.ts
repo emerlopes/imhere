@@ -21,6 +21,11 @@ export const styles = StyleSheet.create({
         marginBottom: 42,
         width: "100%",
         flexDirection: "row",
-        gap: 12
-    }
+        gap: 12,
+    },
+    separator: {
+        height: 1,
+        backgroundColor: '#FDFCFE',
+        marginVertical: 8,
+    },
 });
