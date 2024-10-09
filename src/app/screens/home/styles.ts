@@ -28,4 +28,11 @@ export const styles = StyleSheet.create({
         backgroundColor: '#FDFCFE',
         marginVertical: 8,
     },
+    viewEmptyList: {
+        alignItems: "center"
+    },
+    viewEmptyListText: {
+        color: "#FFF",
+        fontSize: 16
+    }
 });

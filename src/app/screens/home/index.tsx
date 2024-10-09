@@ -44,6 +44,13 @@ export default function Home() {
                     <Participant name={item} onRemove={() => handleParticipantRemove(item)} />
                 )}
                 showsVerticalScrollIndicator={false}
+                ListEmptyComponent={() => (
+                    <>
+                        <View style={styles.viewEmptyList}>
+                            <Text style={styles.viewEmptyListText}>Adicione os participantes ao evento</Text>
+                        </View>
+                    </>
+                )}
             />
         </View>
     );
